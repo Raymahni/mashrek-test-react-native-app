@@ -122,10 +122,10 @@ const styles = StyleSheet.create({
     marginVertical: 5,
   },
   en: {
-    backgroundColor: 'red',
+    backgroundColor: 'green',
   },
   es: {
-    backgroundColor: 'green',
+    backgroundColor: 'red',
   },
   fr: {
     backgroundColor: 'blue',
