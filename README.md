@@ -50,5 +50,5 @@ Run tests using:
 npm test
 
 
-#Note
+# Note
 Had some trouble running the mobile version of the app on expo go, with a little more time would have sorted that out.
