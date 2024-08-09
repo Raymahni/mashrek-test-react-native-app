@@ -59,7 +59,8 @@ const Login: React.FC = () => {
     <View style={styles.container}>
       <BaseLanguageSwitcher />
 
-      <Text style={styles.text}>{t("welcome")}</Text>
+      {/* <Text style={styles[t("theme")]}>{t("welcome")}</Text> */}
+      <Text style={[styles.title, styles[t("theme")]]}>{t("welcome")}</Text>
 
       <Select
         label={t("select_country")}
@@ -102,16 +103,33 @@ const styles = StyleSheet.create({
     fontSize: 20,
     fontWeight: "bold",
   },
+  title: {
+    color: 'white',
+    fontSize: 24,
+    fontWeight: "bold",
+    marginBottom: 20,
+    textAlign: "center",
+    padding: 8,
+  },
   container: {
     flex: 1,
     backgroundColor: "#fff",
     padding: 12,
-    width: "25%",
+    width: "100%",
   },
   error: {
     color: "red",
     marginVertical: 5,
   },
+  en: {
+    backgroundColor: 'red',
+  },
+  es: {
+    backgroundColor: 'green',
+  },
+  fr: {
+    backgroundColor: 'blue',
+  }
 });
 
 export default Login;
